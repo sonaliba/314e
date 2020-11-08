@@ -1,3 +1,26 @@
-# 314e
+# 314e Hackathon to hire
 
-Edit the main_url variable in source code in file Parser.java.
+Problem Statement
+
+Write an app/program to scan through a given webpage, and display the top 10 frequent words and the top 10 frequent word pairs (two words in the same order) along with their frequency. In case the webpage contains hyperlinks, these hyperlinked urls need to be expanded and the words on these pages also should be scanned to come up with the frequent words. 
+
+Important points to note:
+
+You will have to assume that the maximum number of levels you have to expand for urls within a url as 4
+Ignore any external url links
+
+
+Build
+
+javac Parser.java
+
+Run
+
+java Parser.class https://314e.com
+
+Version of java used
+
+java version "1.8.0_251"
+
+
+
