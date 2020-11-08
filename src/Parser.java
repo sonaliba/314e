@@ -16,7 +16,7 @@ import org.jsoup.select.Elements;
 
 public class Parser {
 
-	String main_url = "https://www.314e.com"; // Change this url as per requirement
+	 // Change this url as per requirement
 
 	HashSet<String> urls = new HashSet<String>(); // unique set of url's to be parsed
 
@@ -29,10 +29,12 @@ public class Parser {
 	LinkedHashMap<String, Integer> sortedMap_word_pairs = new LinkedHashMap<>();
 
 	public static void main(String args[]) {
+		
+		String main_url = args[0];
 
 		Parser p = new Parser();
 
-		p.level_order_traversal();
+		p.level_order_traversal(main_url);
 
 		p.count_words_hashset();
 
@@ -222,7 +224,7 @@ public class Parser {
 
 	}
 
-	public void level_order_traversal() { // A breadth first traversal is done of the tree consisting of the hyperlinks
+	public void level_order_traversal(String main_url) { // A breadth first traversal is done of the tree consisting of the hyperlinks
 											// upto level 4
 
 		Queue<String> hyperLinks = new LinkedList<String>();
