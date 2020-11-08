@@ -12,11 +12,13 @@ Ignore any external url links
 
 Build
 
-javac Parser.java
+javac -cp "path to jar of Jsoup" Parser.java
 
 Run
 
-java Parser.class https://314e.com
+java Parser url
+
+example- java Parser https://www.314e.com
 
 Version of java used
 
