@@ -20,6 +20,20 @@ java Parser url
 
 example- java Parser https://www.314e.com
 
+OR
+
+
+
+Build and Run in Eclipse-
+
+Download and import project in Eclipse
+
+Set url in arguments in Run Configurations
+
+Run Project
+
+
+
 Version of java used
 
 java version "1.8.0_251"
