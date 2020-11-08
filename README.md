@@ -1,3 +1,3 @@
 # 314e
 
-Edit the url variable in source code in file Parser.java.
+Edit the main_url variable in source code in file Parser.java.
