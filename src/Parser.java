@@ -12,12 +12,13 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+//Using JSoup library to parse HTML in web pages
 
 public class Parser {
 
-	String main_url = "https://www.314e.com";
+	String main_url = "https://www.314e.com"; //Change this url as per requirement
 
-	HashSet<String> urls = new HashSet<String>();
+	HashSet<String> urls = new HashSet<String>(); //unique set of url's to be parsed
 
 	HashMap<String, Integer> words_frequency = new HashMap<String, Integer>();
 
@@ -45,7 +46,7 @@ public class Parser {
 
 	}
 
-	public void sort_words_frequency() {
+	public void sort_words_frequency() { //takes hash map of most frequent words and sorts it in descending order
 		
 		ArrayList<Integer> list = new ArrayList<>();
 		
@@ -70,7 +71,7 @@ public class Parser {
 		}
 	}
 
-	public void sort_words_pairs_frequency() {
+	public void sort_words_pairs_frequency() { //takes hash map of most frequent word pairs and sort in descending order
 		
 		ArrayList<Integer> list = new ArrayList<>();
 		
@@ -94,7 +95,7 @@ public class Parser {
 		}
 	}
 
-	public void display_words_frequency() {
+	public void display_words_frequency() { //displays top 10 most frequest words
 		
 		int count = 0;
 
@@ -110,7 +111,7 @@ public class Parser {
 		}
 	}
 
-	public void display_word_pairs_frequency() {
+	public void display_word_pairs_frequency() { //displays top 10 most frequest word pairs
 		
 		int count = 0;
 
@@ -127,7 +128,7 @@ public class Parser {
 
 	}
 
-	public void count_words_hashset() {
+	public void count_words_hashset() { 
 
 		for (String link : urls) {
 			
@@ -137,7 +138,7 @@ public class Parser {
 		}
 	}
 
-	public void count_word_pairs(String link) {
+	public void count_word_pairs(String link) { //parser web page to count frequency of word pairs by using a hash map
 		
 		Document doc= null;
 		
@@ -186,7 +187,7 @@ public class Parser {
 	}
 
 	
-	public void count_words(String link) {
+	public void count_words(String link) { //parses web page to count frequency of words by using a hash map
 		
 		Document doc= null;
 		
@@ -228,8 +229,8 @@ public class Parser {
 
 	}
 
-	public void level_order_traversal() {
-		
+	public void level_order_traversal() { // A breadth first traversal is done of the tree consisting of the hyperlinks upto level 4
+										 
 		Queue<String> hyperLinks = new LinkedList<String>();
 
 		hyperLinks.add(main_url);
